@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.model.TToupiao" table="t_toupiao">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="userId"/>
+        </property>
+        <property name="acId" type="java.lang.Integer">
+            <column name="acId"/>
+        </property>
+        <property name="eId" type="java.lang.Integer">
+            <column name="eId"/>
+        </property>
+    </class>
+</hibernate-mapping>

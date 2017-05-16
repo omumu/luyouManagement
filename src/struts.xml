@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8" /> 
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/qiantai/index.jsp</result>
+        </action>
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        <action name="userEdit" class="userAction" method="userEdit">
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userXinxi" class="userAction" method="userXinxi">
+             <result name="success">/admin/user/userXinxi.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="jingdianAdd" class="jingdianAction" method="jingdianAdd">
+        </action>
+        <action name="jingdianDel" class="jingdianAction" method="jingdianDel">
+        </action>
+        <action name="jingdianMana" class="jingdianAction" method="jingdianMana">
+            <result>/admin/jingdian/jingdianMana.jsp</result>
+        </action>
+        <action name="jingdianDetailHou" class="jingdianAction" method="jingdianDetailHou">
+            <result>/admin/jingdian/jingdianDetailHou.jsp</result>
+        </action>
+        <action name="jingdianAll" class="jingdianAction" method="jingdianAll">
+            <result>/qiantai/jingdian/jingdianAll.jsp</result>
+        </action>
+        <action name="jingdianDetailQian" class="jingdianAction" method="jingdianDetailQian">
+            <result>/qiantai/jingdian/jingdianDetailQian.jsp</result>
+        </action>
+        <action name="jingdianRes" class="jingdianAction" method="jingdianRes">
+            <result>/qiantai/jingdian/jingdianAll.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="xianluAdd" class="xianluAction" method="xianluAdd">
+        </action>
+        <action name="xianluDel" class="xianluAction" method="xianluDel">
+        </action>
+        <action name="xianluMana" class="xianluAction" method="xianluMana">
+            <result>/admin/xianlu/xianluMana.jsp</result>
+        </action>
+        <action name="xianluAll" class="xianluAction" method="xianluAll">
+            <result>/qiantai/xianlu/xianluAll.jsp</result>
+        </action>
+        <action name="xianluDetailQian" class="xianluAction" method="xianluDetailQian">
+            <result>/qiantai/xianlu/xianluDetailQian.jsp</result>
+        </action>
+        <action name="xianluRes" class="xianluAction" method="xianluRes">
+            <result>/qiantai/xianlu/xianluAll.jsp</result>
+        </action>
+        
+        
+        
+        <action name="jiudianAdd" class="jiudianAction" method="jiudianAdd">
+        </action>
+        <action name="jiudianDel" class="jiudianAction" method="jiudianDel">
+        </action>
+        <action name="jiudianMana" class="jiudianAction" method="jiudianMana">
+            <result>/admin/jiudian/jiudianMana.jsp</result>
+        </action>
+        <action name="jiudianAll" class="jiudianAction" method="jiudianAll">
+            <result>/qiantai/jiudian/jiudianAll.jsp</result>
+        </action>
+        <action name="jiudianDetailQian" class="jiudianAction" method="jiudianDetailQian">
+            <result>/qiantai/jiudian/jiudianDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        <action name="binguanAdd" class="binguanAction" method="binguanAdd">
+        </action>
+        <action name="binguanDel" class="binguanAction" method="binguanDel">
+        </action>
+        <action name="binguanMana" class="binguanAction" method="binguanMana">
+            <result>/admin/binguan/binguanMana.jsp</result>
+        </action>
+        <action name="binguanAll" class="binguanAction" method="binguanAll">
+            <result>/qiantai/binguan/binguanAll.jsp</result>
+        </action>
+        <action name="binguanDetailQian" class="binguanAction" method="binguanDetailQian">
+            <result>/qiantai/binguan/binguanDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        <action name="xinwenAdd" class="xinwenAction" method="xinwenAdd">
+        </action>
+        <action name="xinwenMana" class="xinwenAction" method="xinwenMana">
+             <result name="success">/admin/xinwen/xinwenMana.jsp</result>
+        </action>
+        <action name="xinwenDel" class="xinwenAction" method="xinwenDel">
+        </action>
+        <action name="xinwenAll" class="xinwenAction" method="xinwenAll">
+             <result name="success">/qiantai/xinwen/xinwenAll.jsp</result>
+        </action>
+        <action name="xinwenDetailQian" class="xinwenAction" method="xinwenDetailQian">
+             <result name="success">/qiantai/xinwen/xinwenDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        <action name="liuyanAdd" class="liuyanAction" method="liuyanAdd">
+        </action>
+        <action name="liuyanMana" class="liuyanAction" method="liuyanMana">
+             <result name="success">/admin/liuyan/liuyanMana.jsp</result>
+        </action>
+        <action name="liuyanDel" class="liuyanAction" method="liuyanDel">
+        </action>
+        <action name="liuyanHuifu" class="liuyanAction" method="liuyanHuifu">
+        </action>
+        <action name="liuyanDetail" class="liuyanAction" method="liuyanDetail">
+             <result name="success">/qiantai/liuyan/liuyanDetail.jsp</result>
+        </action>
+        <action name="liuyanAll" class="liuyanAction" method="liuyanAll">
+             <result name="success">/qiantai/liuyan/liuyanAll.jsp</result>
+        </action>
+        
+        
+        
+        <action name="baomingAdd" class="baomingAction" method="baomingAdd">
+        </action>
+        <action name="baomingMana" class="baomingAction" method="baomingMana">
+             <result name="success">/admin/baoming/baomingMana.jsp</result>
+        </action>
+        <action name="baomingDel" class="baomingAction" method="baomingDel">
+        </action>
+        <action name="baomingTY" class="baomingAction" method="baomingTY">
+        </action>
+        <action name="baomingMine" class="baomingAction" method="baomingMine">
+             <result name="success">/auser/baoming/baomingMine.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        <action name="kefangAdd" class="kefangAction" method="kefangAdd">
+        </action>
+        <action name="kefangMana" class="kefangAction" method="kefangMana">
+             <result name="success">/admin/kefang/kefangMana.jsp</result>
+        </action>
+        <action name="kefangDel" class="kefangAction" method="kefangDel">
+        </action>
+        <action name="kefangAll" class="kefangAction" method="kefangAll">
+             <result name="success">/qiantai/kefang/kefangAll.jsp</result>
+        </action>
+        
+        
+        <action name="yudingAdd" class="yudingAction" method="yudingAdd">
+        </action>
+        <action name="yudingMine" class="yudingAction" method="yudingMine">
+             <result name="success">/auser/yuding/yudingMine.jsp</result>
+        </action>
+        <action name="yudingMana" class="yudingAction" method="yudingMana">
+             <result name="success">/admin/yuding/yudingMana.jsp</result>
+        </action>
+        <action name="yudingDel" class="yudingAction" method="yudingDel">
+        </action>
+        <action name="yudingTY" class="yudingAction" method="yudingTY">
+        </action>
+        
+        
+        
+        
+        <action name="goodsAdd" class="goodsAction" method="goodsAdd">
+        </action>
+        <action name="goodsMana" class="goodsAction" method="goodsMana">
+            <result name="success">/admin/goods/goodsMana.jsp</result>
+        </action>
+        <action name="goodsDel" class="goodsAction" method="goodsDel">
+        </action>
+        <action name="goodsDetailHou" class="goodsAction" method="goodsDetailHou">
+            <result name="success">/admin/goods/goodsDetailHou.jsp</result>
+        </action>
+        <action name="goodsAll" class="goodsAction" method="goodsAll">
+            <result name="success">/qiantai/goods/goodsAll.jsp</result>
+        </action>
+        <action name="goodsDetailQian" class="goodsAction" method="goodsDetailQian">
+            <result name="success">/qiantai/goods/goodsDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="youjiAdd" class="youjiAction" method="youjiAdd">
+        </action>
+        <action name="youjiMine" class="youjiAction" method="youjiMine">
+             <result name="success">/auser/youji/youjiMine.jsp</result>
+        </action>
+        <action name="youjiDel" class="youjiAction" method="youjiDel">
+        </action>
+        <action name="youjiMana" class="youjiAction" method="youjiMana">
+             <result name="success">/admin/youji/youjiMana.jsp</result>
+        </action>
+        
+        <action name="youjiAll" class="youjiAction" method="youjiAll">
+             <result name="success">/qiantai/youji/youjiAll.jsp</result>
+        </action>
+        <action name="youjiDetailQian" class="youjiAction" method="youjiDetailQian">
+             <result name="success">/qiantai/youji/youjiDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="dingcaiAdd" class="dingcaiAction" method="dingcaiAdd">
+        </action>
+        <action name="dingcaiMine" class="dingcaiAction" method="dingcaiMine">
+             <result name="success">/auser/dingcai/dingcaiMine.jsp</result>
+        </action>
+        <action name="dingcaiDel" class="dingcaiAction" method="dingcaiDel">
+        </action>
+        <action name="dingcaiMana" class="dingcaiAction" method="dingcaiMana">
+             <result name="success">/admin/dingcai/dingcaiMana.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="activityAdd" class="activityAction" method="activityAdd">
+        </action>
+        <action name="activityDetail" class="activityAction" method="activityDetail">
+        	<result name="success">/admin/activity/activityDetail.jsp</result>
+        </action>
+        <action name="activityDetailForUser" class="activityAction" method="activityDetailForUser">
+        	<result name="success">/qiantai/activity/activityDetail.jsp</result>
+        </action>
+        <action name="activityDel" class="activityAction" method="activityDel">
+        </action>
+        <action name="activityMana" class="activityAction" method="activityMana">
+             <result name="success">/admin/activity/activityMana.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="essayAdd" class="essayAction" method="essayAdd">
+        </action>
+        <action name="essayDetail" class="essayAction" method="essayDetail">
+        	<result name="success">/qiantai/activity/essayDetail.jsp</result>
+        </action>
+        <action name="essayAll" class="activityAction" method="activityAll">
+            <result name="success">/qiantai/activity/essayAll.jsp</result>
+        </action>
+        <action name="essayDel" class="essayAction" method="essayDel">
+        </action>
+        <action name="essayMana" class="essayAction" method="essayMana">
+             <result name="success">/admin/activity/essayMana.jsp</result>
+        </action>
+        
+        
+        
+        <action name="toupiaoAdd" class="toupiaoAction" method="toupiaoAdd">
+        	<result name="success">/qiantai/activity/activityDetail.jsp</result>
+        </action>
+        
+    </package>
+</struts>
